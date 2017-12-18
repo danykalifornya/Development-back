@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Course": {
+    "dataSource": "CourseDB",
+    "public": true
+  },
+  "Unit": {
+    "dataSource": "CourseDB",
+    "public": true
+  },
+  "Lesson": {
+    "dataSource": "CourseDB",
+    "public": true
+  },
+  "Member": {
+    "dataSource": "CourseDB",
+    "public": true
+  },
+  "Activity": {
+    "dataSource": "CourseDB",
+    "public": true
+  },
+  "Example": {
+    "dataSource": "CourseDB",
+    "public": true
+  }
+}
