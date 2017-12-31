@@ -16,6 +16,9 @@
     "text": {
       "type": "string"
     },
+    "tooltips": {
+      "type": "string"
+    },
     "lesson_id": {
       "type": "string",
       "required": true
